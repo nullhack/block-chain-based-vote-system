@@ -4,7 +4,7 @@ try:
     from cdecimal import Decimal
 except:
     from decimal import Decimal
-peers = [['192.241.212.114', 7900]]#,['69.164.196.239', 8900]]
+peers = [['127.0.0.1', 7900]]
 current_loc=os.path.dirname(os.path.abspath(__file__))
 database_name = os.path.join(current_loc, 'DB')
 log_file=os.path.join(current_loc, 'log')
@@ -13,8 +13,8 @@ api_port=7899
 database_port=7898
 version = "0.0001"
 max_key_length=6**4
-block_reward = 10 ** 5
-fee = 10 ** 3
+block_reward = 10
+fee = 0.0
 # Lower limits on what the "time" tag in a block can say.
 mmm = 100
 # Take the median of this many of the blocks.
